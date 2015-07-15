@@ -345,20 +345,20 @@ UsedLibrary="C:/EAGLE-7.1.0/lbr/xilinx-xc9.lbr"
 UsedLibrary="C:/EAGLE-7.1.0/lbr/xilinx-xcv.lbr"
 UsedLibrary="C:/EAGLE-7.1.0/lbr/zetex.lbr"
 UsedLibrary="C:/EAGLE-7.1.0/lbr/zilog.lbr"
+UsedLibrary="Atmel_By_element14_Batch_1-00.lbr"
 UsedLibrary="Jordan Boards.lbr"
 UsedLibrary="Jordan Connectors.lbr"
 UsedLibrary="Jordan Discrete.lbr"
 UsedLibrary="Jordan ICs.lbr"
 UsedLibrary="Jordan Passive.lbr"
 UsedLibrary="Jordan Switches.lbr"
-UsedLibrary="Atmel_By_element14_Batch_1-00.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="0 0 943 1001"
-State=2
+Loc="652 321 1251 720"
+State=1
 Number=0
 
 [Desktop]
-Screen="1920 1080"
+Screen="3840 1080"
 Window="Win_1"
