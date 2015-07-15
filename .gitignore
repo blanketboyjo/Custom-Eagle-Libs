@@ -17,6 +17,9 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Ingore eagle version control
+*.l#*
+
 # =========================
 # Operating System Files
 # =========================
