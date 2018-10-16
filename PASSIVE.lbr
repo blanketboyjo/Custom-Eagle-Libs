@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.1">
+<eagle version="9.2.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -297,6 +297,19 @@
 <rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>
 <rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
 <rectangle x1="-0.2794" y1="-0.762" x2="0.2794" y2="0.762" layer="41"/>
+</package>
+<package name="RESISTOR_PTH">
+<pad name="1" x="-3.81" y="0" drill="0.8"/>
+<pad name="2" x="3.81" y="0" drill="0.8"/>
+<wire x1="-3.81" y1="0" x2="-1.905" y2="0" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="0" x2="-1.905" y2="0.635" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="0.635" x2="1.905" y2="0.635" width="0.127" layer="21"/>
+<wire x1="1.905" y1="0.635" x2="1.905" y2="0" width="0.127" layer="21"/>
+<wire x1="1.905" y1="0" x2="1.905" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="1.905" y1="-0.635" x2="-1.905" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="-0.635" x2="-1.905" y2="0" width="0.127" layer="21"/>
+<wire x1="1.905" y1="0" x2="3.81" y2="0" width="0.127" layer="21"/>
+<text x="-1.905" y="0.762" size="1.27" layer="21">&gt;Name</text>
 </package>
 </packages>
 <symbols>
@@ -598,6 +611,15 @@
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PTH" package="RESISTOR_PTH">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
