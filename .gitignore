@@ -19,6 +19,7 @@ $RECYCLE.BIN/
 
 # Ingore eagle version control
 *.l#*
+*.epf
 
 # =========================
 # Operating System Files
