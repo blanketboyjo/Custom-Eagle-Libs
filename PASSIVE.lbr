@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -344,28 +344,42 @@
 <wire x1="-0.292" y1="-1.9" x2="0.292" y2="-1.9" width="0.127" layer="21"/>
 <wire x1="0.292" y1="-1.9" x2="0.292" y2="1.9" width="0.127" layer="21"/>
 <wire x1="0.292" y1="1.9" x2="-0.292" y2="1.9" width="0.127" layer="21"/>
-<smd name="5" x="-0.7" y="-0.25" dx="0.35" dy="0.6" layer="1" rot="R90"/>
-<smd name="4" x="-0.7" y="0.25" dx="0.35" dy="0.6" layer="1" rot="R90"/>
-<smd name="3" x="-0.7" y="0.75" dx="0.35" dy="0.6" layer="1" rot="R90"/>
-<smd name="2" x="-0.7" y="1.25" dx="0.35" dy="0.6" layer="1" rot="R90"/>
-<smd name="1" x="-0.7" y="1.75" dx="0.35" dy="0.6" layer="1" rot="R90"/>
-<smd name="6" x="-0.7" y="-0.75" dx="0.35" dy="0.6" layer="1" rot="R90"/>
-<smd name="7" x="-0.7" y="-1.25" dx="0.35" dy="0.6" layer="1" rot="R90"/>
-<smd name="8" x="-0.7" y="-1.75" dx="0.35" dy="0.6" layer="1" rot="R90"/>
-<smd name="12" x="0.7" y="-0.25" dx="0.35" dy="0.6" layer="1" rot="R90"/>
-<smd name="13" x="0.7" y="0.25" dx="0.35" dy="0.6" layer="1" rot="R90"/>
-<smd name="14" x="0.7" y="0.75" dx="0.35" dy="0.6" layer="1" rot="R90"/>
-<smd name="15" x="0.7" y="1.25" dx="0.35" dy="0.6" layer="1" rot="R90"/>
-<smd name="16" x="0.7" y="1.75" dx="0.35" dy="0.6" layer="1" rot="R90"/>
-<smd name="11" x="0.7" y="-0.75" dx="0.35" dy="0.6" layer="1" rot="R90"/>
-<smd name="10" x="0.7" y="-1.25" dx="0.35" dy="0.6" layer="1" rot="R90"/>
-<smd name="9" x="0.7" y="-1.75" dx="0.35" dy="0.6" layer="1" rot="R90"/>
+<smd name="5" x="-0.7" y="-0.25" dx="0.325" dy="0.6" layer="1" rot="R90"/>
+<smd name="4" x="-0.7" y="0.25" dx="0.325" dy="0.6" layer="1" rot="R90"/>
+<smd name="3" x="-0.7" y="0.75" dx="0.325" dy="0.6" layer="1" rot="R90"/>
+<smd name="2" x="-0.7" y="1.25" dx="0.325" dy="0.6" layer="1" rot="R90"/>
+<smd name="1" x="-0.7" y="1.75" dx="0.325" dy="0.6" layer="1" rot="R90"/>
+<smd name="6" x="-0.7" y="-0.75" dx="0.325" dy="0.6" layer="1" rot="R90"/>
+<smd name="7" x="-0.7" y="-1.25" dx="0.325" dy="0.6" layer="1" rot="R90"/>
+<smd name="8" x="-0.7" y="-1.75" dx="0.325" dy="0.6" layer="1" rot="R90"/>
+<smd name="12" x="0.7" y="-0.25" dx="0.325" dy="0.6" layer="1" rot="R90"/>
+<smd name="13" x="0.7" y="0.25" dx="0.325" dy="0.6" layer="1" rot="R90"/>
+<smd name="14" x="0.7" y="0.75" dx="0.325" dy="0.6" layer="1" rot="R90"/>
+<smd name="15" x="0.7" y="1.25" dx="0.325" dy="0.6" layer="1" rot="R90"/>
+<smd name="16" x="0.7" y="1.75" dx="0.325" dy="0.6" layer="1" rot="R90"/>
+<smd name="11" x="0.7" y="-0.75" dx="0.325" dy="0.6" layer="1" rot="R90"/>
+<smd name="10" x="0.7" y="-1.25" dx="0.325" dy="0.6" layer="1" rot="R90"/>
+<smd name="9" x="0.7" y="-1.75" dx="0.325" dy="0.6" layer="1" rot="R90"/>
 <text x="-0.254" y="2.032" size="0.6096" layer="25">&gt;Name</text>
 </package>
 <package name="VLS5045EX">
 <smd name="1" x="-1.8" y="0" dx="4" dy="1.5" layer="1" rot="R90"/>
 <smd name="2" x="1.8" y="0" dx="4" dy="1.5" layer="1" rot="R90"/>
 <text x="-1.27" y="2.159" size="0.6096" layer="25">&gt;Name</text>
+</package>
+<package name="PANCAP_S_F">
+<smd name="+" x="4" y="0" dx="2" dy="4" layer="1" rot="R270"/>
+<smd name="-" x="-4" y="0" dx="2" dy="4" layer="1" rot="R270"/>
+<wire x1="-4.15" y1="4.15" x2="-4.15" y2="-4.15" width="0.15" layer="21"/>
+<wire x1="-4.15" y1="-4.15" x2="2.075" y2="-4.15" width="0.15" layer="21"/>
+<wire x1="2.075" y1="-4.15" x2="4.15" y2="-2.075" width="0.15" layer="21"/>
+<wire x1="4.15" y1="-2.075" x2="4.15" y2="2.075" width="0.15" layer="21"/>
+<wire x1="4.15" y1="2.075" x2="2.075" y2="4.15" width="0.15" layer="21"/>
+<wire x1="2.075" y1="4.15" x2="-4.15" y2="4.15" width="0.15" layer="21"/>
+<circle x="0" y="0" radius="4.15" width="0.15" layer="21"/>
+<wire x1="-1.397" y1="3.937" x2="-1.397" y2="-3.937" width="0.15" layer="21"/>
+<wire x1="-1.651" y1="-3.81" x2="-1.651" y2="3.81" width="0.15" layer="21"/>
+<text x="3.81" y="2.794" size="1.27" layer="25">&gt;Name</text>
 </package>
 </packages>
 <symbols>
@@ -813,14 +827,14 @@
 </connects>
 <technologies>
 <technology name="10U0">
-<attribute name="DIGIKEY" value="732-8430-1-ND"/>
+<attribute name="MPN" value="865080440002"/>
 <attribute name="TEMPCOEF" value=""/>
 <attribute name="TOLERANCE" value="20%"/>
 <attribute name="VALUE" value="10uF"/>
 <attribute name="VMAX" value="25V"/>
 </technology>
 <technology name="1U0">
-<attribute name="DIGIKEY" value="732-8541-1-ND"/>
+<attribute name="MPN" value=" 865060640001"/>
 <attribute name="TEMPCOEF" value=""/>
 <attribute name="TOLERANCE" value="20%"/>
 <attribute name="VALUE" value="1uF"/>
@@ -828,7 +842,7 @@
 </technology>
 </technologies>
 </device>
-<device name="SAMG" package="SAMCAP_G">
+<device name="PAN_S_G" package="SAMCAP_G">
 <connects>
 <connect gate="G$1" pin="+" pad="+"/>
 <connect gate="G$1" pin="-" pad="-"/>
@@ -838,6 +852,24 @@
 <attribute name="MPN" value="EEE-1EA471P"/>
 <attribute name="VALUE" value="470uF"/>
 <attribute name="VMAX" value="25V"/>
+</technology>
+</technologies>
+</device>
+<device name="PAN_S_EF" package="PANCAP_S_F">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name="100U">
+<attribute name="MPN" value="EEE-1EA101AP"/>
+<attribute name="VALUE" value="100uF"/>
+<attribute name="VMAX" value="25V"/>
+</technology>
+<technology name="47U">
+<attribute name="MPN" value="EEE-1VA470P"/>
+<attribute name="VALUE" value="47uF"/>
+<attribute name="VMAX" value="35V"/>
 </technology>
 </technologies>
 </device>
