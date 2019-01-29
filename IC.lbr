@@ -2859,7 +2859,30 @@ Gains set by part number 20,50,100,200</description>
 <gate name="G$1" symbol="QUADOPAMP" x="0" y="5.08"/>
 </gates>
 <devices>
-<device name="" package="TSSOP-14">
+<device name="TSSOP" package="TSSOP-14">
+<connects>
+<connect gate="G$1" pin="1+" pad="5"/>
+<connect gate="G$1" pin="1-" pad="4"/>
+<connect gate="G$1" pin="1O" pad="2"/>
+<connect gate="G$1" pin="2+" pad="7"/>
+<connect gate="G$1" pin="2-" pad="6"/>
+<connect gate="G$1" pin="2O" pad="1"/>
+<connect gate="G$1" pin="3+" pad="9"/>
+<connect gate="G$1" pin="3-" pad="8"/>
+<connect gate="G$1" pin="3O" pad="14"/>
+<connect gate="G$1" pin="4+" pad="11"/>
+<connect gate="G$1" pin="4-" pad="10"/>
+<connect gate="G$1" pin="4O" pad="13"/>
+<connect gate="G$1" pin="GND" pad="12"/>
+<connect gate="G$1" pin="VCC" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MPN" value="LMV339IPWR"/>
+</technology>
+</technologies>
+</device>
+<device name="SO" package="SOIC-3.9MM-14">
 <connects>
 <connect gate="G$1" pin="1+" pad="5"/>
 <connect gate="G$1" pin="1-" pad="4"/>

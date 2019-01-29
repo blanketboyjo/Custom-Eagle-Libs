@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -620,6 +620,28 @@
 <circle x="-2.921" y="-1.524" radius="0.283978125" width="0.127" layer="21"/>
 <text x="-3.048" y="3.556" size="0.8128" layer="25">&gt;Name</text>
 </package>
+<package name="HEADER20X1_.1">
+<pad name="5" x="0" y="13.97" drill="1.016" diameter="1.6764"/>
+<pad name="6" x="0" y="11.43" drill="1.016" diameter="1.6764"/>
+<pad name="7" x="0" y="8.89" drill="1.016" diameter="1.6764"/>
+<pad name="8" x="0" y="6.35" drill="1.016" diameter="1.6764"/>
+<pad name="9" x="0" y="3.81" drill="1.016" diameter="1.6764"/>
+<pad name="10" x="0" y="1.27" drill="1.016" diameter="1.6764"/>
+<pad name="11" x="0" y="-1.27" drill="1.016" diameter="1.6764"/>
+<pad name="4" x="0" y="16.51" drill="1.016" diameter="1.6764"/>
+<pad name="12" x="0" y="-3.81" drill="1.016" diameter="1.6764"/>
+<pad name="13" x="0" y="-6.35" drill="1.016" diameter="1.6764"/>
+<pad name="3" x="0" y="19.05" drill="1.016" diameter="1.6764"/>
+<pad name="2" x="0" y="21.59" drill="1.016" diameter="1.6764"/>
+<pad name="14" x="0" y="-8.89" drill="1.016" diameter="1.6764"/>
+<pad name="15" x="0" y="-11.43" drill="1.016" diameter="1.6764"/>
+<pad name="16" x="0" y="-13.97" drill="1.016" diameter="1.6764"/>
+<pad name="17" x="0" y="-16.51" drill="1.016" diameter="1.6764"/>
+<pad name="18" x="0" y="-19.05" drill="1.016" diameter="1.6764"/>
+<pad name="19" x="0" y="-21.59" drill="1.016" diameter="1.6764"/>
+<pad name="1" x="0" y="24.13" drill="1.016" diameter="1.6764"/>
+<pad name="20" x="0" y="-24.13" drill="1.016" diameter="1.6764"/>
+</package>
 </packages>
 <symbols>
 <symbol name="HEADER5X2">
@@ -905,6 +927,29 @@
 <wire x1="7.62" y1="-53.34" x2="7.62" y2="50.8" width="0.254" layer="94"/>
 <wire x1="7.62" y1="50.8" x2="-5.08" y2="50.8" width="0.254" layer="94"/>
 <pin name="IO_33" x="-10.16" y="-50.8" length="middle"/>
+</symbol>
+<symbol name="HEADER20X1">
+<pin name="1" x="-2.54" y="25.4" visible="off" length="short"/>
+<pin name="2" x="-2.54" y="22.86" visible="off" length="short"/>
+<pin name="3" x="-2.54" y="20.32" visible="off" length="short"/>
+<pin name="4" x="-2.54" y="17.78" visible="off" length="short"/>
+<pin name="5" x="-2.54" y="15.24" visible="off" length="short"/>
+<pin name="6" x="-2.54" y="12.7" visible="off" length="short"/>
+<pin name="8" x="-2.54" y="7.62" visible="off" length="short"/>
+<pin name="7" x="-2.54" y="10.16" visible="off" length="short"/>
+<pin name="9" x="-2.54" y="5.08" visible="off" length="short"/>
+<pin name="10" x="-2.54" y="2.54" visible="off" length="short"/>
+<pin name="11" x="-2.54" y="0" visible="off" length="short"/>
+<pin name="12" x="-2.54" y="-2.54" visible="off" length="short"/>
+<pin name="13" x="-2.54" y="-5.08" visible="off" length="short"/>
+<pin name="14" x="-2.54" y="-7.62" visible="off" length="short"/>
+<pin name="15" x="-2.54" y="-10.16" visible="off" length="short"/>
+<pin name="16" x="-2.54" y="-12.7" visible="off" length="short"/>
+<pin name="17" x="-2.54" y="-15.24" visible="off" length="short"/>
+<pin name="18" x="-2.54" y="-17.78" visible="off" length="short"/>
+<pin name="19" x="-2.54" y="-20.32" visible="off" length="short"/>
+<pin name="20" x="-2.54" y="-22.86" visible="off" length="short"/>
+<wire x1="0" y1="25.4" x2="0" y2="-22.86" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1265,6 +1310,40 @@ This is for selecting between two voltages</description>
 <connect gate="G$1" pin="IO_31" pad="38"/>
 <connect gate="G$1" pin="IO_32" pad="39"/>
 <connect gate="G$1" pin="IO_33" pad="40"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="HEADER20X1">
+<gates>
+<gate name="G$1" symbol="HEADER20X1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="HEADER20X1_.1">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="14" pad="14"/>
+<connect gate="G$1" pin="15" pad="15"/>
+<connect gate="G$1" pin="16" pad="16"/>
+<connect gate="G$1" pin="17" pad="17"/>
+<connect gate="G$1" pin="18" pad="18"/>
+<connect gate="G$1" pin="19" pad="19"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="20" pad="20"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>
